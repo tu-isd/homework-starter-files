@@ -15,6 +15,7 @@ to your _sandbox_
 on your CSE share.
 
 Follow these steps:
+
 . Run `PyCharm`
 . From the `Welcome to PyCharm` window, click *Check out from Version Control*
 . Click *Github*
@@ -26,3 +27,27 @@ Follow these steps:
    choose a sensible location on your CSE share.
 . Click the *Clone* button.
 
+These steps should create a new PyCharm project
+that contains starter files for the ISD homework assignments.
+
+== Working on an Assignment
+
+As required, complete the assigned homework in the appropriate folder within
+your repository.
+
+Instructions for the assignment are found in a file
+called `README.adoc` at the top level of each folder.
+The `README.adoc` file should be legible as is,
+but if you would like to read a nicely formatted version,
+refer to the file on Github,
+which formats `.adoc` files automatically as HTML.
+
+You are welcome to use any starter files in the homework directory
+to get going on the assignment.
+
+== Submitting an Assignment
+
+When you've completed an assignment,
+you'll need to push your updated repository
+back to Github where your work
+will be visible for grading.
