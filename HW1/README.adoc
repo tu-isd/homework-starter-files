@@ -1,0 +1,48 @@
+= Basic HTML Lab
+Information Systems Design
+
+IMPORTANT: This is an individual assignment.
+
+== Learn
+
+If you are not already familiar with HTML,
+spend some time going over the HTML tutorial at
+http://www.w3schools.com/html/[w3schools].
+Although you are welcome to work through the entire tutorial,
+the portion under the heading “HTML Basic”
+(upper left portion of page)
+should give you sufficient background to do this assignment.
+
+== Construct
+
+Build an HTML page that contains the following information
+
+* A meaningful title (should appear in the browser window frame)
+* Several levels of headings, properly nested (H2 inside H1, etc).
+* Several paragraphs of ordinary text, including text that is highlighted within the paragraph (e.g., strong, etc.)
+* Two hyperlinks to real locations on the Internet
+* A table of data containing at least four rows of three columns, including a heading row
+* A simple form that uses a table for layout; the form should include:
+** First name
+** Last name
+** E-mail address
+** Computer preference--allow user to choose one or more of Windows, Linux, or Macintosh from a dropdown box
+
+The content of your page is not particularly important--structure and format are.
+You can make up (fun) content,
+use http://www.lipsum.com/[lorem ipsum] text, etc.
+Don't worry about a beautiful design--just get all the aforementioned elements into your page.
+
+== Observe
+
+Follow these guidelines:
+
+* All HTML elements must be properly nested.
+* All HTML elements must include both an opening and closing tag.
+* Any attributes in an opening tag must have values that are quoted.
+* Select form fields of the appropriate type.
+
+== Submit
+
+Commit your updated HTML file to Git and push it to Github.
+
