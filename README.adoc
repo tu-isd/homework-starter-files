@@ -1,0 +1,28 @@
+= Homework Assignments
+Information Systems Design
+
+This is your private repository 
+for working and submitting 
+homework assignments.
+
+Each homework assignment is stored in a separate folder
+within this repository.
+
+== Getting Started
+
+To get started, you will clone your Github repository
+to your _sandbox_
+on your CSE share.
+
+Follow these steps:
+. Run `PyCharm`
+. From the `Welcome to PyCharm` window, click *Check out from Version Control*
+. Click *Github*
+. Fill out the following details:
+.. For *Git Repository URL*, enter
+   `https://github.com/tu-isd/<your-github-id>-homework.git`
+   except substitute your actual Github ID for `<your-github-id>`
+.. For *Parent Directory* and *Directory Name*, 
+   choose a sensible location on your CSE share.
+. Click the *Clone* button.
+
