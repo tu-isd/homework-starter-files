@@ -1,3 +1,3 @@
-# Taylor Information Systems Design
+# Taylor University Information Systems Design
 
-## Homework Starter Files
+This is your repository for working and submitting homework assignments.
