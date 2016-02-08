@@ -16,8 +16,8 @@ on your CSE share.
 
 Follow these steps:
 
-. Run `PyCharm`
-. From the `Welcome to PyCharm` window, click *Check out from Version Control*
+. Run PyCharm
+. From the *Welcome to PyCharm* window, click *Check out from Version Control*
 . Click *Github*
 . Fill out the following details:
 .. For *Git Repository URL*, enter
@@ -32,16 +32,15 @@ that contains starter files for the ISD homework assignments.
 
 == Working on an Assignment
 
-As required, complete the assigned homework in the appropriate folder within
-your repository.
+Following are general instructions for all assignments.
 
 === Update your Sandbox
 
 Before working on an assignment,
-you should update your sandbox from Github
+update your sandbox from Github
 to make sure you have the latest-and-greatest
-of the files for the assignment.
-Do this as follows:
+version of the files for the assignment.
+Do this as follows within PyCharm:
 
 . From the *VCS* menu, choose *Update Project...*
 . From the *Update Project* window,
@@ -51,7 +50,9 @@ leave the default options selected and click *OK*.
 
 Instructions for the assignment are found in a file
 called `README.adoc` at the top level of each folder.
-The `README.adoc` file should be legible as is,
+The `README.adoc` file 
+(an `asciidoc` file)
+should be legible as is,
 but if you would like to read a nicely formatted version,
 refer to the file on Github,
 which formats `.adoc` files automatically as HTML.
@@ -63,22 +64,22 @@ to get going on the assignment.
 
 When you've completed an assignment,
 you'll need to push your updated repository
-back to Github where your work
-will be visible for grading.
+back to Github, where your work
+will be available for grading.
 
 === Add New Files
 
 If you created any new files while working
 on the assignment,
 you'll need to add them to revision control
-before you push your completed assignment to Github.
-To check whether you have files not yet under revision control,
-from the *View* menu, choose *Tool Windows* > *Version Control*.
+_before_ you push your completed assignment to Github.
+To use PyCharm to check whether you have files not yet under revision control
 
-The *Version Control* window show appear in PyCharm.
-Choose the *Local Changes* tab.
-Check whether there are files listed as *Unversioned Files*.
-If so, and if the file(s) listed are ones that are part
+. From the *View* menu, choose *Tool Windows* > *Version Control*.
+. The *Version Control* window appears
+. Choose the *Local Changes* tab.
+. Check whether there are files listed as *Unversioned Files*.
+. If so, and if the file(s) listed are ones that are part
 of the project (and not just temporary files that you don't want to turn in),
 right click on the file and choose *Add to VCS*.
 This will register the file with Git
