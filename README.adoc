@@ -35,6 +35,20 @@ that contains starter files for the ISD homework assignments.
 As required, complete the assigned homework in the appropriate folder within
 your repository.
 
+=== Update your Sandbox
+
+Before working on an assignment,
+you should update your sandbox from Github
+to make sure you have the latest-and-greatest
+of the files for the assignment.
+Do this as follows:
+
+. From the *VCS* menu, choose *Update Project...*
+. From the *Update Project* window,
+leave the default options selected and click *OK*.
+
+=== Instructions
+
 Instructions for the assignment are found in a file
 called `README.adoc` at the top level of each folder.
 The `README.adoc` file should be legible as is,
@@ -51,3 +65,41 @@ When you've completed an assignment,
 you'll need to push your updated repository
 back to Github where your work
 will be visible for grading.
+
+=== Add New Files
+
+If you created any new files while working
+on the assignment,
+you'll need to add them to revision control
+before you push your completed assignment to Github.
+To check whether you have files not yet under revision control,
+from the *View* menu, choose *Tool Windows* > *Version Control*.
+
+The *Version Control* window show appear in PyCharm.
+Choose the *Local Changes* tab.
+Check whether there are files listed as *Unversioned Files*.
+If so, and if the file(s) listed are ones that are part
+of the project (and not just temporary files that you don't want to turn in),
+right click on the file and choose *Add to VCS*.
+This will register the file with Git
+and it will be submitted when you push your changes to Github.
+
+=== Commit and Push
+
+Although commit and push are two separate Git operations,
+PyCharm makes it easy to do both when you are ready to
+submit your assignment.
+
+. From the *VCS* menu, click *Commit Changes*.
+`PyCharm` opens the *Commit Changes* dialog box.
+. In the top-left window, `PyCharm` shows you
+the files that are going to be committed.
+Make sure there aren't any files that you _don't_ want to commit,
+or files that are not listed there that you _do_ want to commit
+(see above for information on how to add new files to Git).
+. Write a brief commit message in the window
+in the lower-left corner of the dialog box.
+Commit messages are extremely valuable when working on a team project
+so that you can communication (and remember!) what you've done.
+. Hover over the highlighted *Commit* button in the lower-right corner.
+. A pop-up menu appears. Choose *Commit and Push...*
