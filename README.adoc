@@ -103,4 +103,4 @@ Commit messages are extremely valuable when working on a team project
 so that you can communication (and remember!) what you've done.
 . Hover over the highlighted *Commit* button in the lower-right corner.
 . A pop-up menu appears. Choose *Commit and Push...*
-. After the commit is complete, another dialog opens
+. After the commit is complete, the *Push
