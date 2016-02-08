@@ -103,4 +103,15 @@ Commit messages are extremely valuable when working on a team project
 so that you can communication (and remember!) what you've done.
 . Hover over the highlighted *Commit* button in the lower-right corner.
 . A pop-up menu appears. Choose *Commit and Push...*
-. After the commit is complete, the *Push
+. After the commit is complete, the *Push Commits* dialog appears.
+Click *Push* to push your changes to Github.
+
+=== Verify your Submission
+
+Just to make sure everything you intended to submit
+is available on Github,
+you should log on to your Github account,
+navigate to the appropriate homework folder
+in your repository,
+and verify that all the files you intended to submit
+are present.
