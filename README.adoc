@@ -102,6 +102,8 @@ or files that are not listed there that you _do_ want to commit
 in the lower-left corner of the dialog box.
 Commit messages are extremely valuable when working on a team project
 so that you can communication (and remember!) what you've done.
+*When your homework submission is ready for grading,
+please start your commit message with `READY FOR GRADING`.*
 . Hover over the highlighted *Commit* button in the lower-right corner.
 . A pop-up menu appears. Choose *Commit and Push...*
 . After the commit is complete, the *Push Commits* dialog appears.
