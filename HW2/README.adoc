@@ -16,13 +16,14 @@ http://jinja.pocoo.org/[its main web page].
 
 . Create a base HTML template called `base.html`.
 Be sure to store this template in the `templates` directory of your assignment.
-. Your base template should have a block for
+. Your base template should have a block
+  (i.e., `{% block ... %} ... {% endblock %}`) for
 * Page title in the `<head>` element
 * Page content in the `<body>` element.
 . Create another HTML template called `letters.html`.
 This template should
-* Inherit from (`extend`) the `base.html` template.
-* Expect to be receive a list of values from its view function
+* Inherit from (`extend`) the `base.html` template, and override both `block`s defined there.
+* Expect to receive a list of values from its view function
   as a context variable called `letters`.
 * Display each element of `letters` as an item (`<li>...</li>`)
   in an ordered list (`<ol>...</ol>`)
@@ -33,7 +34,7 @@ The function should
 * Construct a list consisting of the names of the first four letters
   of the Greek alphabet: `alpha`, `beta`, `gamma`, and `delta`.
 * Render the `letters.html` template,
-  passing it the list of Greek letter names.
+  passing it the list of Greek letter names as a context variable.
 
 == Verify
 
@@ -45,6 +46,5 @@ The function should
 == Submit
 
 Commit your updated HTML file to Git and push it to Github.
-Be sure to start comment comment with `READY FOR GRADING`
+Be sure to start your commit comment with `READY FOR GRADING`
 in your final submission of the assignment.
-
