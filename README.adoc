@@ -30,6 +30,41 @@ Follow these steps:
 These steps should create a new PyCharm project
 that contains starter files for the ISD homework assignments.
 
+== Installing Python Modules
+
+For both individual homework assignments and the project,
+you will have to install Python modules in addition to those
+installed by default.
+To install a new module:
+
+. Run PyCharm
+. Open PyCharm's setttings, which are found under different menus depending on your computer.
+** On a Mac, from the *PyCharm* menu, choose *Preferences...*
+** On Windows, from the *File* menu, choose *Settings...*
+. In the list on the left, find the *Project* section.
+** If *Project Interpreter* _is_ shown beneath *Project*, click on *Project Interpreter*
+** If *Project Interpreter* is _not_ show beneath *Project*, either:
+*** Click the triangle to the left of *Project*, then click on *Project Interpreter*
+*** Click on *Project*, the click on *Project Interpreter* in the main section of the window.
+. The *Project Interpreter* window shows a list of packages currently installed.
+  Check that the package you need isn't already installed. If it is, you're done--click *Cancel*.
+. Click the *+* button at the bottom of the package list.
+  A window containing available packages appears.
+. In the search box at the top of the *Available Packages* window,
+  type (a portion of) the name of the package you want to install.
+  For example, to install Flask, type `Flask`.
+. Many packages have related names.
+  For example, there are a lot of packages that extend Flask that are named `Flask-<something>`.
+  Make sure the correct package name is selected in the list on the left.
+. Click *Install Package* at the bottom of the window.
+. While the package installs, you'll see `(Installing)` next to the package name.
+  When installation is complete, a message highlighted in green
+  tells you that the package was installed correctly.
+. Close the *Available Packages* window.
+  (Unless you want to install more packages; in that case, search for the next package and repeat.)
+. Check that the list of installed packages includes the package you just installed.
+. Click *OK* to dismiss the settings window.
+
 == Working on an Assignment
 
 Following are general instructions for all assignments.
