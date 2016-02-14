@@ -30,12 +30,35 @@ Follow these steps:
 These steps should create a new PyCharm project
 that contains starter files for the ISD homework assignments.
 
-== Installing Python Modules
+== Installing Python Modules (Automated Process)
 
 For both individual homework assignments and the project,
 you will have to install Python modules in addition to those
 installed by default.
-To install a new module:
+
+For example, say you want to use Flask.
+Your Python code would include in `import` statement like this:
+[source,python]
+----
+from flask import Flask
+----
+If Flask is not yet installed, PyCharm will show a squiggly underline below `flask`
+to indicate that it doesn't know about this module.
+
+As pointed out by Caleb Dinsmore (thank you!),
+PyCharm is incredibly helpful when you need a new module.
+
+. Click to place your cursor on `flask` in the `import` statement, and hit *Alt+Enter*.
+  This will open up a suggestions menu for resolving the error.
+  The first suggestion should be `Install package <package-name>`.
+. Select the `Install package` option.
+  PyCharm will install the package.
+  You'll see a progress bar at the bottom of the PyCharm window as the installation completes.
+
+== Installing Python Modules (Manual Process)
+
+If the automatic process for module installation doesn't work,
+here are detailed manual instructions for installing a module.
 
 . Run PyCharm
 . Open PyCharm's setttings, which are found under different menus depending on your computer.
