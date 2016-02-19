@@ -17,13 +17,13 @@ Create a schema with the following information
 
 |===
 
-| `id`
-| integer
-| Also the primary key of the table
+|`id`
+|integer
+|Also the primary key of the table
 
-| `first_name`
-| string
-| requied (`NOT NULL`)
+|`first_name`
+|string
+|requied (`NOT NULL`)
 
 |===
 
