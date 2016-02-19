@@ -1,0 +1,16 @@
+= SQL Query Lab
+
+IMPORTANT: This is an individual assignment.
+
+== Sample Code
+
+Be sure to make use of the sample code stored in the
+https://github.com/tu-isd/examples-db[`examples-db` repository] on Github.
+
+== Schema
+
+== DB Functions
+
+All functions that access the database should be stored in the `db.py` file.
+Refer to the `examples-db` application for examples.
+

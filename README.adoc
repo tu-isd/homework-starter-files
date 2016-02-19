@@ -91,6 +91,8 @@ Although commit and push are two separate Git operations,
 PyCharm makes it easy to do both when you are ready to
 submit your assignment.
 
+Test.
+
 . From the *VCS* menu, click *Commit Changes*.
 `PyCharm` opens the *Commit Changes* dialog box.
 . In the top-left window, `PyCharm` shows you
