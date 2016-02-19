@@ -8,47 +8,38 @@ IMPORTANT: This is an individual assignment.
   https://github.com/tu-isd/examples-db[`examples-db` repository] on Github.
 * All functions that access the database should be stored in the `db.py` file.
   Refer to the `examples-db` application for examples.
+* HTML templates should use the supplied `base.html` template
 
 == Schema
 
 Create a schema with the following information
 
 . `student` table
-
-|===
-
-|`id`
-|integer
-|Also the primary key of the table
-
-|`first_name`
-|string
-|requied (`NOT NULL`)
-
-|===
-
+.. `id`-- an integer, also the primary key of the table
+.. `first_name`--required string (`NOT NULL`)
 .. `last_name`--required string
-.. `year`--string that contains one of `freshman`, `sophomore`, `junior`, or `senior`
+.. `year`--string containing one of `freshman`, `sophomore`, `junior`, or `senior`
 
 . `trip` table with the following columns:
 .. `id`--integer primary key
-.. `destination`--string containing destination
+.. `destination`--string containing trip destination
 .. `year`--academic year of trip
 .. `semester`--string that is one of `fall`, `interterm`, `spring`, or `spring break`
 
-. `student_trip` is as a many-to-many associative table connecting students to missions trips.
+. `student_trip` is as a many-to-many associative table connecting students to trips.
 Note that `student_id` and `trip_id` should be part of a composite primary key for `student_trip`.
 .. `student_id` is an integer that is a foreign key to the `id` field of the `student` table
 .. `trip_id` is an integer that is a foreign key to the `id` field of the `trip` table
 
 You may use the Database features of PyCharm to create these tables
 (View menut -> Tool Windows -> Database)
-or write the SQL `CREATE TABLE` statements directly
+or write SQL `CREATE TABLE` statements directly
 (refer to the `examples-db` repository for examples).
 
 == Sample Data
 
 Create sample data as follows:
+
 . At least three students in the `student` table
 . At least two trips in the `trip` table
 . At least two students per trip in the `student_trip` table.
@@ -57,3 +48,24 @@ As with schema creation,
 you may use PyCharm tools to populate these tables from the "Table Editor"
 in the PyCharm Database view,
 or you may write SQL `INSERT` statements directly.
+
+== Trip Page
+
+Create a Flask web application that includes
+a route (`/trips`),
+view function (`trip_report`),
+HTML page (`trip-report.html`),
+and database function (`db.trip_report`)
+that creates a page containing the details of all trips.
+Trip details should be formatted as an HTML table
+containing the following columns:
+
+* Trip destination
+* Trip semester
+* Trip year
+* Student first name
+* Student last name
+* Student class
+
+The table should contain one row for each combination of trip and student
+in the database.
