@@ -9,6 +9,25 @@ https://github.com/tu-isd/examples-db[`examples-db` repository] on Github.
 
 == Schema
 
+Create a schema with the following information
+
+. `student` table with the following columns:
+.. `id`---integer that is also the primary key of the table
+.. `first_name`--requied (`NOT NULL`) string
+.. `last_name`--required string
+.. `year`--string that contains one of `freshman`, `sophomore`, `junior`, or `senior`
+
+. `trip` table with the following columns:
+.. `id`--integer primary key
+.. `destination`--string containing destination
+.. `year`--academic year of trip
+.. `semester`--string that is one of `fall`, `interterm`, `spring`, or `spring break`
+
+. `student_trip` table that acts as an associative table conneting students to missions trips.
+Note that `student_id` and `trip_id` are part of a composite primary key for `student_trip`.
+.. `student_id` is an integer that is a foreign key to the `id` field of the `student` table
+.. `trip_id` is an integer that is a foreign key to the `id` field of the `trip` table
+
 == DB Functions
 
 All functions that access the database should be stored in the `db.py` file.
