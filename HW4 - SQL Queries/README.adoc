@@ -14,6 +14,28 @@ IMPORTANT: This is an individual assignment.
 
 Create a schema with the following information
 
+[cols="20m,20m,60d"]
+|===
+| Column | Type | Notes
+
+| id
+| integer
+| Primary key
+
+| first_name
+| string
+| Required (`NOT NULL`)
+
+| last_name
+| string
+| Required (`NOT NULL`)
+
+| year
+| string
+| Contains one of `freshman`, `sophomore`, `junior`, or `senior`
+
+|===
+
 . `student` table
 .. `id`-- an integer, also the primary key of the table
 .. `first_name`--required string (`NOT NULL`)
