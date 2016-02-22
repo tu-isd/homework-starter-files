@@ -10,6 +10,19 @@ IMPORTANT: This is an individual assignment.
   Refer to the `examples-db` application for examples.
 * HTML templates should use the supplied `base.html` template
 
+== Create a Database
+
+. Open the Database tool window (View -> Tool Windows -> Database)
+. Click the `+` button, select Data Source -> Sqlite.
+  The _Data Sources and Drivers_ window should appear.
+. Enter the name for your database file in the _File_ box
+  (for example `hw4-db.sqlite`).
+. Click the `+` button at the right end of the _File_ box
+  and navigate to the directory that contains your files for this assignment.
+. Click _OK_.
+  The full path to the database file should now be in the _File_ box.
+. Click _OK_ to close the _Data Sources and Drivers_ window.
+
 == Schema
 
 Create a schema with the following database tables.
