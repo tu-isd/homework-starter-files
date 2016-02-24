@@ -17,7 +17,9 @@ create a form that allows you to enter all the data for a trip.
 . For the `semester` field of the form,
   create a drop-down list using the WTForms `SelectField`.
 
-Here is an example of using a `SelectField`:
+Here is an example of using a `SelectField`.
+See also
+http://wtforms.readthedocs.org/en/latest/fields.html#wtforms.fields.SelectField[the WTForms documentation].
 [source,python]
 ----
 class AddTripForm(Form):
