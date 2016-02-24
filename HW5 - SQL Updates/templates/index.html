@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+    <h1>Welcome</h1>
+
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home Page</a></li>
+    </ul>
+{% endblock %}

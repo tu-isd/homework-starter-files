@@ -1,0 +1,65 @@
+= SQL Update Lab
+
+IMPORTANT: This is an individual assignment.
+
+== Create a database
+
+You will use the same database that you created in the last assignment (_SQL Queries_).
+Check the `README` file from that assignment for complete details.
+You are welcome to use any SQL you wrote for that assignment (e.g., `CREATE TABLE` statements).
+
+== Create an Add Trip form
+
+Using http://wtforms.readthedocs.org/en/latest/[WTForms],
+create a form that allows you to enter all the data for a trip.
+
+. Include approprivate validators
+. For the `semester` field of the form,
+  create a drop-down list using the WTForms `SelectField`.
+
+Here is an example of using a `SelectField`:
+[source,python]
+----
+class AddTripForm(Form):
+    # Other fields
+    semester = SelectField('Semester', choices=[('fall', 'Fall'), ('jterm', 'Interterm'), ... )])
+----
+Note that each entry in the `choices` array is a Python _tuple_
+(kind of like an array)
+whose first element is the value that will be sent in the POST request
+and whose second element is what will be displayed in the drop-down list.
+
+== Create an Add Trip database function
+
+Write a function in the `db.py` file
+that allows you to insert a new trip into the database.
+It should take one parameter for each column in the trip table.
+
+== Write an Add Trip view
+
+Create a view function that processes the add trip form.
+It should:
+
+. Use the form you defined above
+. Handle both GET and POST requests
+. Have a meaningful function name
+. Be accessible from a meaningful URL route
+. Invoke the database function defined above,
+  passing in the values of each form field
+. Flash messages to tell the user of any error conditions
+. Flash a message when a new trip is added successfully
+. When a trip is added successfully,
+  redirect the user to the Trip Report page (below)
+
+== Create a Trip Report page
+
+Create a complete web page that displays all the trips currently in the database.
+You will use this page to verify that trips are added successfully.
+The implementation of this page will be similar to the page displayed in the previous homework
+(only simpler!).
+You will have to define:
+
+. A database function that fetches and returns the entire contents of the trip table
+. A template that displays the result of the database query
+. A view function that runs the database function and renders the template
+  with the data retrieved from the trip table
