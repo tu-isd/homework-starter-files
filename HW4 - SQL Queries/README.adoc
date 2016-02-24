@@ -10,18 +10,82 @@ IMPORTANT: This is an individual assignment.
   Refer to the `examples-db` application for examples.
 * HTML templates should use the supplied `base.html` template
 
-== Create a Database
+== Create a Database File
 
-. Open the Database tool window (View -> Tool Windows -> Database)
-. Click the `+` button, select Data Source -> Sqlite.
+The best place to store your database file for a given homework assignment
+is right inside the directory for that homework in your repository
+(e.g., inside `HW4 - SQL Query` or wherever).
+Follow these steps:
+
+. Open the _Database_ tool window (View -> Tool Windows -> Database)
+. Click the `+` button, and select Data Source -> Sqlite.
   The _Data Sources and Drivers_ window should appear.
-. Enter the name for your database file in the _File_ box
-  (for example `hw4-db.sqlite`).
-. Click the `+` button at the right end of the _File_ box
-  and navigate to the directory that contains your files for this assignment.
-. Click _OK_.
-  The full path to the database file should now be in the _File_ box.
+. Click the `+` button to the right of the _File_ box.
+  In the _New Database_ window, navigate to
+  the same folder in which you're working (e.g., `X:\\...\HW4 - SQL Query`).
+. In the _File Name_ box at the bottom of the window,
+  enter a database name (e.g., `hw4-db.sqlite`).
+. Click _OK_. The full path to the database file should now be in the _File_ box.
 . Click _OK_ to close the _Data Sources and Drivers_ window.
+
+== Connect to your database from Python
+
+Use the following code to connect to your database.
+
+[source,python]
+----
+import os
+DATABASE = 'test-db.sqlite'
+
+# Connect to the database.
+def connect_db():
+    db_path = os.path.join(os.getcwd(), DATABASE)
+    if not os.path.isfile(db_path):
+        raise RuntimeError("Can't find database file '{}'".format(db_path))
+    connection = sqlite3.connect(db_path)
+    connection.row_factory = sqlite3.Row
+    return connection
+----
+
+Be sure to update the value of the `DATABASE` variable
+with whatever name you gave to the database file
+in the previous section (e.g., `hw4-db.sqlite`).
+Set `DATABASE` to _only_ the file name (_not_ the entire path to the database file).
+
+This function looks for your database file
+in the folder in which you're working.
+This should be the folder that you selected
+when you created the database file above.
+If `connect_db` can't find the file,
+it will raise an error.
+If that happens:
+
+* Make sure you've created the file in your homework directory.
+  You should be able to see it listed with your other files in the _Project_ tool window in PyCharm.
+* Make sure the value of the `DATABASE` variable matches the name of the file.
+
+== Database Troubleshooting
+
+Students have reported seeing the following error messages.
+
+Unable to open the database file (out of memory)::
+   Your Python code can't find the file containing your database.
+   Several sources suggest that the "out of memory" is a red herring.
+No such table: _xyz_:: This error could stem from several causes
+
+* You have not created the `xyz` table yet.
+  You can check to see which tables are defined in your database
+  by clicking the small grey triangle to the left of the SQLite icon
+  in the _Database_ tool window.
+* You have misspelled the table name in your query.
+* You are not properly connected to the database,
+  or you are connecting to a different database file than you intend.
+
+Most of these errors can be remedied
+by ensuring that you have created a database file
+in a known location
+and that your Python code can find that file.
+These steps are detailed in the preceding sections.
 
 == Schema
 
