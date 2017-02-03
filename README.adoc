@@ -1,4 +1,5 @@
 = Homework Assignments
+
 Information Systems Design
 
 This is your private repository 
@@ -21,7 +22,7 @@ Follow these steps:
 . Click *Github*
 . Fill out the following details:
 .. For *Git Repository URL*, enter
-   `https://github.com/tu-isd/<your-github-id>-homework.git`
+   `https://github.com/tu-isd/individual-labs-<your-github-id>.git`
    except substitute your actual Github ID for `<your-github-id>`
 .. For *Parent Directory* and *Directory Name*, 
    choose a sensible location on your CSE share.
@@ -45,7 +46,6 @@ from flask import Flask
 If Flask is not yet installed, PyCharm will show a squiggly underline below `flask`
 to indicate that it doesn't know about this module.
 
-As pointed out by Caleb Dinsmore (thank you!),
 PyCharm is incredibly helpful when you need a new module.
 
 . Click to place your cursor on `flask` in the `import` statement, and hit *Alt+Enter*.
@@ -92,10 +92,10 @@ here are detailed manual instructions for installing a module.
 
 Following are general instructions for all assignments.
 
-=== Update your Sandbox
+=== Update your Sandbox (Optional)
 
 Before working on an assignment,
-update your sandbox from Github
+you may wish to update your sandbox from Github
 to make sure you have the latest-and-greatest
 version of the files for the assignment.
 Do this as follows within PyCharm:
@@ -149,8 +149,6 @@ Although commit and push are two separate Git operations,
 PyCharm makes it easy to do both when you are ready to
 submit your assignment.
 
-Test.
-
 . From the *VCS* menu, click *Commit Changes*.
 `PyCharm` opens the *Commit Changes* dialog box.
 . In the top-left window, `PyCharm` shows you
@@ -161,7 +159,7 @@ or files that are not listed there that you _do_ want to commit
 . Write a brief commit message in the window
 in the lower-left corner of the dialog box.
 Commit messages are extremely valuable when working on a team project
-so that you can communication (and remember!) what you've done.
+so that you can communicate (and remember!) what you've done.
 *When your homework submission is ready for grading,
 please start your commit message with `READY FOR GRADING`.*
 . Hover over the highlighted *Commit* button in the lower-right corner.

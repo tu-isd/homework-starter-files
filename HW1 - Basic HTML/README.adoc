@@ -1,4 +1,5 @@
 = Basic HTML Lab
+
 Information Systems Design
 
 IMPORTANT: This is an individual assignment.
@@ -16,7 +17,7 @@ Build an HTML page that contains the following information.
 
 . A meaningful title (should appear in the browser window frame)
 . Several levels of headings, properly nested across the document
-  (first an `<h1>` element, then an `<h2>`, etc.)
+  (e.g., an `<h1>` element with nested `<h2>` elements, etc.)
 . Several paragraphs of ordinary text, including text that is highlighted within the paragraph (e.g., strong, etc.)
 . Two hyperlinks to real locations on the Internet
 . A table of data containing at least four rows of three columns, including a heading row
