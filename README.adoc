@@ -9,6 +9,21 @@ homework assignments.
 Each homework assignment is stored in a separate folder
 within this repository.
 
+== Development Environment
+
+You are welcome to use whatever development environment you prefer.
+If you don't have a preference, 
+I recommend that you use PyCharm.
+The full "professional" version 
+is installed on the lab machines,
+and is available for free for students to download and use.
+Follow these steps:
+
+. Download PyCharm at https://www.jetbrains.com/pycharm/.
+. Install it on your machine.
+. Apply for a free student license at https://www.jetbrains.com/student/.
+. Follow the instructions in the e-mail you will receive that contains your license.
+
 == Getting Started
 
 To get started, you will clone your Github repository
