@@ -7,7 +7,7 @@ IMPORTANT: This is an individual assignment.
 
 For examples of how to use templates with Flask,
 refer to the
-https://github.com/tu-isd/talks[sample code covered in class].
+https://github.com/tu-isd/examples[sample code covered in class].
 The templating language we're using is called Jinja.
 Find details on Jinja at
 http://jinja.pocoo.org/[its main web page].

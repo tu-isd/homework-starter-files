@@ -6,7 +6,7 @@ IMPORTANT: This is an individual assignment.
 == Review
 
 Review the information on Flask forms found in the README file of the
-https://github.com/tu-isd/examples-forms[Github examples-forms repository].
+https://github.com/tu-isd/examples/tree/master/forms[Github examples-forms repository].
 
 == Construct
 
