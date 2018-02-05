@@ -1,8 +1,6 @@
-Information Systems Design
+# Information Systems Design
 
-> **Important**
->
-> This is an individual assignment.
+**Important** This is an individual assignment.
 
 Learn
 =====
