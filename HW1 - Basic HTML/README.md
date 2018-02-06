@@ -53,6 +53,8 @@ Follow these guidelines:
 2.  All HTML elements must include both an opening and closing tag.
 
 3.  Any attributes in an opening tag must have values that are quoted.
+    For example, `<a href=http://google.com>` is incorrect;
+    instead, write `<a href="http://google.com">`.
 
 4.  Select form fields of the appropriate type.
 
