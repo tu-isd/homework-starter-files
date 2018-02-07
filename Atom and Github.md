@@ -19,3 +19,16 @@ Recent versions of Atom have integrated support for Git and GitHub.
      on your *C:* drive; it is local to only that computer. Instead, use
      a folder on your *X:* drive, which is a file share that you can access
      from any computer in the CS&E network.
+1. In the *Git* tab,
+   you will see a list of files you've changed
+   under *Unstaged Changes*.
+   These changes are local to your develoment sandbox and have not been staged for command to GitHub (i.e., no `github add` command has been executed for them yet).
+   - To stage a single file, click on it.
+   - To stage all unstaged files, click *Stage All*
+1. When you have the desired files staged for commit, enter a commit message
+   in the text box and click the *Commit* button. This will commit your
+   staged changes to your local repository.
+1. To push changes to GitHub, click on the "up and down arrow" icon
+   at the bottom of the *Git* tab. Click the *Push* button.
+1. Your file should be pushed to GitHub.
+   You may wish to go to GitHub in your web browser and check that the files you intended to push are actually present.
