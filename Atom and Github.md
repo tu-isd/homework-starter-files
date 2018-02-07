@@ -19,3 +19,4 @@ Recent versions of Atom have integrated support for Git and GitHub.
      on your *C:* drive; it is local to only that computer. Instead, use
      a folder on your *X:* drive, which is a file share that you can access
      from any computer in the CS&E network.
+1. You 
