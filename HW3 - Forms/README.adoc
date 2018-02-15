@@ -53,13 +53,15 @@ that can handle both a
 * `GET` request that returns the initial, empty registration form
 * `POST` request that processes a submitted form
 
-Using WT Forms, the view function must apply these validations:
+Use WT Forms to create your registration form.
+The form should include the following validations:
 
-* First name and last name must be at least five characters in length
-* E-mail address must be valid
-* Password must be at least eight characters long and must contain at least one letter,
+1. First name and last name must be at least five characters in length
+1. E-mail address must be valid
+1. Password must be at least eight characters long
+   and must contain at least one letter,
    one digit, and one punctuation character.
-* Password and password confirmation fields must match exactly
+1. Password and password confirmation fields must match exactly
 
 If any validation criteria fail,
 the application should redisplay the from
