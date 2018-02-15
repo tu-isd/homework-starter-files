@@ -5,8 +5,34 @@ IMPORTANT: This is an individual assignment.
 
 == Review
 
-Review the information on Flask forms found in the README file of the
-https://github.com/tu-isd/examples/tree/master/forms[Github examples-forms repository].
+Review the information on Flask forms found in the class samples:
+
+* https://github.com/tu-isd/class-examples/tree/master/02a%20-%20sessions%20(simple)[Simple forms]
+* https://github.com/tu-isd/class-examples/tree/master/02b%20-%20sessions%20(WT%20Forms)[WT Forms].
+
+Take note of the following documentation:
+
+* http://wtforms.readthedocs.io/en/latest/index.html[WT Forms]
+  (generic WT Forms documentation)
+** http://wtforms.readthedocs.io/en/latest/fields.html[Information on specific field types]
+** http://wtforms.readthedocs.io/en/latest/validators.html[Details on validators]
+
+* https://flask-wtf.readthedocs.io/en/stable/[Flask WT Forms]
+  (Flask interface to WT Forms)
+* https://getbootstrap.com/docs/4.0/components/forms[Styling forms with Bootstrap]
+
+== Install
+
+In your development environment,
+you'll need to install `Flask-WTF`
+in the same way that you installed `Flask` initially.
+
+As a reminder if you're using PyCharm:
+
+1. Open *Preferences* (Mac) or *File > Settings* (Windows)
+1. Navigate to *Project > Project Interpreter*
+1. Click the *`+`* button and search for `Flask-WTF`
+1. Select `Flask-WTF` and click `Install Package`
 
 == Construct
 
@@ -24,17 +50,13 @@ The page allows the user to submit:
 The application implements a view function called `register`
 that can handle both a
 
-* GET request that returns the initial, empty registration form
-* POST request that processes a submitted form
+* `GET` request that returns the initial, empty registration form
+* `POST` request that processes a submitted form
 
-The view function must validate the submitted form as follows:
+Using WT Forms, the view function must apply these validations:
 
 * First name and last name must be at least five characters in length
-* E-mail address must look like a plausible e-mail address.
-   A simple specification for a plausible address might be
-   one or more letters, an `@` sign, one or more letters, a dot (`.`) and one or more letters.
-   For example `fred@ziffle.com` would satisfy this specification,
-   but the following would not: `fred`, `fred@ziffle`, `@ziffle.com`, `fred.com`.
+* E-mail address must be valid
 * Password must be at least eight characters long and must contain at least one letter,
    one digit, and one punctuation character.
 * Password and password confirmation fields must match exactly
@@ -52,14 +74,15 @@ There are errors in your registration form:
 * Password and confirmation don't match
 * E-mail address doesn't look valid
 ----
-Because the error information displayed to the user may consist of multiple messages,
-the view function should store error messages in an array as errors are detected.
-Pass this array of messages to the template,
-where it should be processed using a `{% for %}` directive.
 
-When a form satisfies all the validation criteria,
-redirect the user to a confirmation page
-that indicates successfull completion of the registration form.
+When the registration form satisfies all the validation criteria:
+
+1. Store the user information in the Flask `session` object.
+2. Redirect the user to a confirmation page with url `/confirmation`
+   _using browser redirection_.
+
+The confirmation page should
+include the user's first name, last name, and email address.
 
 == Verify
 
@@ -72,5 +95,5 @@ that indicates successfull completion of the registration form.
 
 Commit your updated HTML file to Git and push it to Github.
 
-Be sure to start your commit comment with `READY FOR GRADING`
+Start your Git commit comment with `READY FOR GRADING`
 in your final submission of the assignment.
