@@ -88,7 +88,7 @@ going on one or more trips.
 <td><p>Required (<code>NOT NULL</code>)</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>year</code></p></td>
+<td><p><code>class</code></p></td>
 <td><p><code>string</code></p></td>
 <td><p>Contains one of <code>freshman</code>, <code>sophomore</code>, <code>junior</code>, or <code>senior</code></p></td>
 </tr>
