@@ -163,7 +163,7 @@ tables, respectively.
 </tr>
 <tr class="odd">
 <td><p><code>trip_id</code></p></td>
-<td><p><code>INTGER</code></p></td>
+<td><p><code>INTEGER</code></p></td>
 <td><p>Part of the composite primary key, and a foreign key to the <code>id</code> field of the <code>trip</code> table</p></td>
 </tr>
 </tbody>
