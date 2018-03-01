@@ -90,7 +90,8 @@ going on one or more trips.
 <tr class="odd">
 <td><p><code>class</code></p></td>
 <td><p><code>VARCHAR(10)</code></p></td>
-<td><p>Contains one of <code>freshman</code>, <code>sophomore</code>, <code>junior</code>, or <code>senior</code></p></td>
+<td><p>Sufficiently large to store one of 
+    <code>freshman</code>, <code>sophomore</code>, <code>junior</code>, or <code>senior</code></p></td>
 </tr>
 </tbody>
 </table>
@@ -130,7 +131,8 @@ This table contains data on available trips.
 <tr class="odd">
 <td><p><code>semester</code></p></td>
 <td><p><code>VARCHAR(10)</code></p></td>
-<td><p>One of <code>fall</code>, <code>interterm</code>, <code>spring</code>, or <code>spring break</code></p></td>
+<td><p>Sufficient to store of 
+    <code>fall</code>, <code>interterm</code>, <code>spring</code>, or <code>spring break</code></p></td>
 </tr>
 </tbody>
 </table>
