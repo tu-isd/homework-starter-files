@@ -74,22 +74,22 @@ going on one or more trips.
 </tr>
 <tr class="even">
 <td><p><code>id</code></p></td>
-<td><p><code>integer</code></p></td>
-<td><p>Primary key</p></td>
+<td><p><code>INTEGER</code></p></td>
+<td><p>Primary key, auto increment</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>first_name</code></p></td>
-<td><p><code>string</code></p></td>
+<td><p><code>VARCHAR(30)</code></p></td>
 <td><p>Required (<code>NOT NULL</code>)</p></td>
 </tr>
 <tr class="even">
 <td><p><code>last_name</code></p></td>
-<td><p><code>string</code></p></td>
+<td><p><code>VARCHAR(30)</code></p></td>
 <td><p>Required (<code>NOT NULL</code>)</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>class</code></p></td>
-<td><p><code>string</code></p></td>
+<td><p><code>VARCHAR(10)</code></p></td>
 <td><p>Contains one of <code>freshman</code>, <code>sophomore</code>, <code>junior</code>, or <code>senior</code></p></td>
 </tr>
 </tbody>
@@ -114,22 +114,22 @@ This table contains data on available trips.
 </tr>
 <tr class="even">
 <td><p><code>id</code></p></td>
-<td><p><code>integer</code></p></td>
-<td><p>Primary key</p></td>
+<td><p><code>INTEGER</code></p></td>
+<td><p>Primary key, auto increment</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>destination</code></p></td>
-<td><p><code>string</code></p></td>
+<td><p><code>VARCHAR(100)</code></p></td>
 <td><p>Destination of trip (e.g., <code>Chiang Mai, Thailand</code>)</p></td>
 </tr>
 <tr class="even">
 <td><p><code>year</code></p></td>
-<td><p><code>integer</code></p></td>
+<td><p><code>INTEGER</code></p></td>
 <td><p>Year of trip</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>semester</code></p></td>
-<td><p><code>string</code></p></td>
+<td><p><code>VARCHAR(10)</code></p></td>
 <td><p>One of <code>fall</code>, <code>interterm</code>, <code>spring</code>, or <code>spring break</code></p></td>
 </tr>
 </tbody>
@@ -158,12 +158,12 @@ tables, respectively.
 </tr>
 <tr class="even">
 <td><p><code>student_id</code></p></td>
-<td><p><code>integer</code></p></td>
+<td><p><code>INTEGER</code></p></td>
 <td><p>Part of the composite primary key, and a foreign key to the <code>id</code> field of the <code>student</code> table</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>trip_id</code></p></td>
-<td><p><code>integer</code></p></td>
+<td><p><code>INTGER</code></p></td>
 <td><p>Part of the composite primary key, and a foreign key to the <code>id</code> field of the <code>trip</code> table</p></td>
 </tr>
 </tbody>
